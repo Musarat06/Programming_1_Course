@@ -1,0 +1,17 @@
+int searchSmallestMissingIteration(int* arr, int size){
+  int j = 0;
+  for (int i=0; i<=(size-2); i++) {
+      if ((arr[i+1]-arr[i])!=1){
+          cout << (arr[i]+1);
+          break;
+        } else {
+            j = j+1;
+        }
+    } 
+
+    if (j==size-1){
+        cout<< "EXIT_FAILURE";
+    }
+    
+    return EXIT_FAILURE;
+}
